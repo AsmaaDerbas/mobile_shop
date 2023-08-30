@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>New Fashion</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">clothes<span>.</span></a>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="products.html">products</a>
+            <a href="login.html">Login</a>
+            <a href="shooping.html">shooping</a>
+            <a href="shooping.html">Checkout</a>
+        </nav>
+        </header>
+    <section class="home" id="home">
+    <div class="content">
+        <h3>new fashion</h3>
+        <span>the latest clothing trends</span>
+        <p>Clothing styles have always been a reflection of a society and culture. They have also been used as a tool for social change
+            On our site you will find everything you are looking for and what meets your needs in the world of clothing. </p>
+    <a href="login.html" class="btn">shop now</a>
+        </div>
+
+    </section>
+    <section class="products-container">
+        <div class="products">
+            <img src="images/1.jfif"onclick="showLargeImage('images/1.jfif', 'Girls suit')">
+            <div class="info">
+                <p>Girl's suit</p>
+                <span>free</span>
+            </div>
+        </div>
+        <div class="products">
+            <img src="images/2.jpg" onclick="showLargeImage('images/2.jpg', 'woman jacket')">
+            <div class="info">
+                <p>Woman jacket</p>
+                <span>15$</span>
+            </div>
+        </div>
+        <div class="products">
+            <img src="images/3.jpg" onclick="showLargeImage('images/3.jpg', 'Sweater')">
+            <div class="info">
+                <p>Sweater</p>
+                <span>10$</span>
+            </div>
+        </div>
+        <div class="products">
+            <img src="images/17.jpg" onclick="showLargeImage('images/17.jpg', 'Girl Sweater')">
+            <div class="info">
+                <p>Girl'Sweater</p>
+                <span>12$</span>
+            </div>
+        </div>
+        <div class="products">
+            <img src="images/5.png"onclick="showLargeImage('images/5.png', 'HEM DRESS')">
+            <div class="info">
+                <p>Hem Dress</p>
+                <span>12$</span>
+            </div>
+        </div>
+        <div class="products">
+            <img src="images/6.jpg" onclick="showLargeImage('images/6.jpg', 'Soiree Suit')">
+            <div class="info">
+                <p>Soiree Suit</p>
+                <span>12$</span>
+            </div>
+        </div>
+        <div class="products">
+            <img src="images/14.jpg"onclick="showLargeImage('images/14.jpg', ' Girl Sweater')">
+            <div class="info">
+                <p> Girl'Sweater</p>
+                <span>12$</span>
+            </div>
+        </div>
+        <div class="products">
+            <img src="images/15.jpg" onclick="showLargeImage('images/15.jfif', 'Girl Sweater')">
+            <div class="info">
+                <p>Girl'Sweater</p>
+                <span>12$</span>
+            </div>
+        </div>
+        <div class="products">
+            <img src="images/10.jpg" onclick="showLargeImage('images/10.jpg', 'Girl Jacket')">
+            <div class="info">
+                <p>Girl'Jacket</p>
+                <span>12$</span>
+            </div>
+        </div>
+        <div class="products">
+            <img src="images/11.jfif" onclick="showLargeImage('images/11.jfif', 'Sweater')">
+            <div class="info">
+                <p>Sweater</p>
+                <span>12$</span>
+            </div>
+        </div>
+        <div class="products">
+            <img src="images/12.jpg" onclick="showLargeImage('images/12.jpg', 'Girl Jacket')">
+            <div class="info">
+                <p>Girl'Jacket</p>
+                <span>12$</span>
+            </div>
+        </div>
+        <div class="products">
+            <img src="images/13.jpg" onclick="showLargeImage('images/13.jpg', 'Hem Dress')">
+            <div class="info">
+                <p>Hem Dress
+                </p>
+                <span>12$</span>
+            </div>
+        </div>
+        
+    </section>
+    <script>
+        function showLargeImage(largeImageUrl, imageDetails) {
+        var newPageUrl = "products.html";
+        window.open(newPageUrl);
+       sessionStorage.setItem("largeImageUrl", largeImageUrl);
+       sessionStorage.setItem("imageDetails", imageDetails);
+}
+    </script>
+</body>
+</html>

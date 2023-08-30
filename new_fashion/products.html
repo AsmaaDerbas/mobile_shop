@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Fashion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+</head>
+<body onload="showImageDetails()">
+    <header>
+        <a href="#" class="logo">clothes<span>.</span></a>
+        <nav class="navbar">
+          <a href="index.html">home</a>
+          <a href="products.html">products</a>
+          <a href="login.html">login</a>
+          <a href="shooping.html">shooping</a>
+          <a href="shooping.html">Checkout</a>
+        </nav>
+    </header>
+    <div class="product">
+    <div class="product-container">
+        <img  id="large-image" src="images/14.jpg" alt="Example Product" width="500" height="400">
+        <div class="product-info">
+          <p id ="image-details"></p>
+          <p class="product-price">$19.99</p>
+        </div>
+      </div>
+      </div>
+      
+<script>
+  function showImageDetails() {
+  var largeImageUrl = sessionStorage.getItem("largeImageUrl");
+  var imageDetails = sessionStorage.getItem("imageDetails");
+  var image = document.getElementById("large-image");
+  image.src = largeImageUrl;
+  var details = document.getElementById("image-details");
+  details.textContent = imageDetails;
+}
+</script>
+</body>
+</html>
